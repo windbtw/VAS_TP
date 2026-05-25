@@ -20,8 +20,9 @@
 
 (* Abstract domain used for the analyses. *)
 (* module Dom : Relational.Domain = NonRelational.MakeRelational (Dummy) *)
+(* module Dom : Relational.Domain = NonRelational.MakeRelational (Kildall) *)
 (* module Dom : Relational.Domain = NonRelational.MakeRelational (Parity) *)
-module Dom : Relational.Domain = NonRelational.MakeRelational (Kildall)
+module Dom : Relational.Domain = NonRelational.MakeRelational (Intervals)
 (* To be able to use this last two domains, you have to install the Apron
  * library and change the flag "actually_use_apron" in myocamlbuild.ml. *)
 (* module Dom : Relational.Domain = ApronWrapper.Polka *)
