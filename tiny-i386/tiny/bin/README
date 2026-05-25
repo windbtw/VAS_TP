@@ -1,0 +1,4 @@
+Various version of TINY static analyzer with different abstract domains.
+Those versions are compiled for i386 (32 bits).
+tiny-polyhedra and tiny-octagons require the library apron (Debian package
+libapron-ocaml).
